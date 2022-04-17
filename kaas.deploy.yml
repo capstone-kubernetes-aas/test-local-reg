@@ -18,5 +18,6 @@ spec:
       containers:
         - name: website
           image: test-local-reg-website-deployment:latest
+          imagePullPolicy: Never
 
   replicas: 1
