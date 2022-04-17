@@ -2,22 +2,22 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: test-local-reg-website-deployment
+  name: 42069-test-deploy
 
 spec:
   selector:
     matchLabels:
-      app: test-local-reg-website-deployment
+      app: 42069-test-deploy
 
   template:
     metadata:
       labels:
-        app: test-local-reg-website-deployment
+        app: 42069-test-deploy
 
     spec:
       containers:
-      - name: website
-        image: localhost:5000/test-reg-web
+      - name: 42069-test-deploy
+        image: 42069-test-deploy
         imagePullPolicy: IfNotPresent
 
   replicas: 1
