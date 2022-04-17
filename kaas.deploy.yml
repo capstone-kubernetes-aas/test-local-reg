@@ -8,16 +8,13 @@ spec:
   selector:
     matchLabels:
       app: test-local-reg-website-deployment
-
   template:
     metadata:
       labels:
         app: test-local-reg-website-deployment
-
-    spec:
-      containers:
-        - name: website
-          image: test-local-reg-website-deployment:latest
-          imagePullPolicy: IfNotPresent
+  containers:
+    - name: website
+      image: localhost:5000/test-local-reg-website-deployment:latest
+      imagePullPolicy: IfNotPresent
 
   replicas: 1
