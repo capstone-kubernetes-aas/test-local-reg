@@ -18,6 +18,6 @@ spec:
       containers:
       - name: website
         image: test-reg-web
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Never
 
   replicas: 1
