@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: 42069-test-deploy
-        image: 42069-test-deploy
+        image: localhost:5000/42069-test-deploy
         imagePullPolicy: IfNotPresent
 
   replicas: 1
