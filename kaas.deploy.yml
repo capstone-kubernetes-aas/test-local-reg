@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: website
-          # image: localhost:42069/test-local-reg-website-deployment:latest
+
 
   replicas: 1
