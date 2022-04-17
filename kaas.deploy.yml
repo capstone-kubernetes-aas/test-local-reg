@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: website
-        image: test-reg-web
+        image: localhost:5000/test-reg-web
         imagePullPolicy: Never
 
   replicas: 1
