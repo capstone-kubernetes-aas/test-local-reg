@@ -1,5 +1,5 @@
 FROM arm64v8/node:17.3-bullseye
-EXPOSE 38070
+EXPOSE 42069
 
 # copy over the files and install
 # the production dependencies
