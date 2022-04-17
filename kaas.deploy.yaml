@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: test-local-reg-website-deployment
+
+spec:
+  selector:
+    matchLabels:
+      app: test-local-reg-website-deployment
+
+  template:
+    metadata:
+      labels:
+        app: test-local-reg-website-deployment
+
+    spec:
+      containers:
+        - name: website
+          image: localhost:4200/test-local-reg-website-deployment:latest
+
+  replicas: 1
