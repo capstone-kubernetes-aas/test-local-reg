@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: website
-        image: test-local-reg-website-deployment:latest
+        image: test-reg-web
         imagePullPolicy: IfNotPresent
 
   replicas: 1
