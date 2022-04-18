@@ -3,7 +3,7 @@ kind: Deployment
 
 metadata:
   name: 42069-test-deploy
-  namespace: 42069-test-deploy-namespace
+  # namespace: 42069-test-deploy-namespace
 
 spec:
   selector:
